@@ -9,7 +9,59 @@
 	<script type='text/javascript' src='js/jquery-1.8.2.min.js' ></script>
 	<script type='text/javascript' src='js/jquery-ui-1.8.24.custom.min.js' ></script>
 	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+	<script type= "text/javascript" charset="utf-8" src="phonegap-1.2.0.js"></script>
+	<script type= "text/javascript" charset="utf-8">
 	
+	//Populate the database
+	//
+	function populateDB(tx){
+		tx.executeSql('DROP TABLE IF EXISTS TRYDB');
+		tx.executeSql('CREATE TABLE IF NOT EXISTS TRYDB(id unique, data)');
+		tx.executeSql('INSERT INTO TRYDB(id, data)VALUES(1,"First row")');
+		tx.executeSql('INSERT INTO TRYDB(id, data)VALUES(2,"Second row")');
+	}
+	//Query the database
+	//
+	function queryDB(tx){
+		tx.execute('SELECT * FROM TRYDB',[],querySuccess,errorCB);
+	}
+	//Query the success callback
+	//
+	function querySuccess(tx,results){
+		var len= results.rows.length;
+		console.log("TryDB table: " + len + "rows found.");
+		for(var i=0; i<len; i++){
+			console.log("Row = " + i + "ID = " + results.rows.item(i).id + "Data = " + results.rows.item(i).data);
+		}
+	}
+	//Transaction error callback
+	//
+	function errrorCB(tx, err){
+		alert("Error processing SQL:"+err.code);
+	}
+	//Transaction success callback
+	//
+	function successCB(){
+		var db = window.openDatabase("Database", "1.0", "PhoneGap TryDB", 200000);
+		db.transaction(queryDB, errorCB);
+	}
+	//Wait for phonegap to load
+	//
+	document.addEventListener("deviceready", onDeviceReady, false);
+	//Phonegap is ready
+	//
+	function onDeviceReady(){
+		window.localStorage.setItem("key", "value");
+		var keyname = window.localStorage.key(i);
+		//keyname is now equal to ""key"
+		var value = window.localStorage.getItem("key");
+		//value is now equal to "value"
+		window.localStorage.removeItem("key");
+		window.localStorage.setItem("key2",value2);
+		window.localStorage.clear();
+		//localStorage is now empty
+	}
+	</script>
 	<link rel='stylesheet' href='css/styles.css' />
 	<script type='text/javascript'>
 	$(function() {
