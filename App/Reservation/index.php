@@ -43,8 +43,7 @@
 	//
 	function successCB(){
 		var db = window.openDatabase("Database", "1.0", "PhoneGap TryDB", 200000);
-		db.transaction(queryDB, errorCB);
-	}
+		db.transaction(queryDB, errorCB);}
 	//Wait for phonegap to load
 	//
 	document.addEventListener("deviceready", onDeviceReady, false);
