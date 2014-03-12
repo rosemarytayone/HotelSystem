@@ -1,0 +1,33 @@
+﻿.ui-mobile #jqm-home {  background: #7E95C7;}
+.ui-mobile #jqm-homeheader { text-align: center ; border-bottom:thin solid #fff;background-color: #003399;}
+
+/*.ui-mobile #jqm-version { text-indent: -99999px; background: url(http://64.19.142.11/managingmeals.com/demos/datepicker/images/version.png) top right no-repeat; width: 119px; height: 122px; overflow: hidden; position: absolute; top: 0; right: 0; }
+.ui-mobile .jqm-themeswitcher { clear: both; margin: 20px 0 0; }*/
+
+h2 { margin-top:1.5em; }
+p code { font-size:1.2em; font-weight:bold; } 
+
+dt { font-weight: bold; margin: 2em 0 .5em; }
+dt code, dd code { font-size:1.3em; line-height:150%; }
+
+/*The header bars, turn wellspan blue*/
+/*.ui-bar-c {  border: 1px solid #456f9a; background: #2952a9; color: #fff; font-weight: bold; text-shadow: 0 -1px 1px #254f7a; background-image: -moz-linear-gradient(top, #3e63b2, #2952a9); background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #3e63b2),color-stop(1, #2952a9));   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#3e63b2', EndColorStr='#2952a9')"; }*/
+.ui-bar-c {  border: 1px solid #456f9a; background: #003399; color: #fff; font-weight: bold; text-shadow: 0 -1px 1px #254f7a;}
+
+/*Link thats been clicked*/
+.ui-btn-active { /*border: 1px solid #2952a9;*/ background: #2952a9; font-weight: bold; color: #fff; cursor: pointer;  text-shadow: 0 -1px 1px #2952a9; text-decoration: none; background-image: -moz-linear-gradient(top, #3e63b2, #2952a9); background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #3e63b2),color-stop(1, #2952a9));   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#3e63b2', EndColorStr='#2952a9')"; }
+
+/*Just plain text we want white and readable*/
+.text{ color: #fff;font-family:"Arial", Arial, sans-serif; }
+
+
+.ui-btn:visited { color: #000; }
+
+.ui-corner-bottom-2 { -moz-border-radius-bottomleft: .2em; -webkit-border-bottom-left-radius: .2em; border-bottom-left-radius: .2em; -moz-border-radius-bottomright: .2em; -webkit-border-bottom-right-radius: .2em; border-bottom-right-radius: .2em; }
+.ui-corner-top-2 { -moz-border-radius-topleft: .2em; -webkit-border-top-left-radius: .2em; border-top-left-radius: .2em; -moz-border-radius-topright: .2em; -webkit-border-top-right-radius: .2em; border-top-right-radius: .2em; }
+.ui-corner-all-2 { -moz-border-radius: .2em; -webkit-border-radius: .2em; border-radius: .2em; }
+.ui-corner-all-1 { -moz-border-radius: .1em; -webkit-border-radius: .1em; border-radius: .1em; }
+
+
+input.ui-input-text, textarea.ui-input-text { background-image: none; padding: 0em; line-height: 1.4; font-size: 28px; display: block; width: 95%; }
+input.ui-input-text, textarea.ui-input-text { -moz-border-radius: 0em; -webkit-border-radius: 0em; border-radius: 0em; }
