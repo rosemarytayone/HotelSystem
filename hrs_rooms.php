@@ -25,7 +25,7 @@
 						<h5>Room Space: 100 sq. meters</h5>
 						<h5>Capacity: 2 persons</h5></center>
 						<a href="hrs_rooms.php" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="rooms" src="images/5.jpg" style="max-height:312px; alt="ROOM" >
-						<a href="hrs_reserv.php" data-rel=""  data-position-to="" data-transition="" type="button" data-theme="b">Reserve</a>
+						<a href="try1.php" data-rel="dialog"  data-position-to="window" data-transition="fade" type="button" data-theme="b">Reserve</a>
 					</div>
 					
 			<li><a href="#rm101" data-rel="popup"  data-position-to="window" data-transition="fade" ><img class="rooms" src="images/3.jpg" alt="ROOM" height="100px" width="100px"><h2>Room 101</h2><p>Php 1,000.00</p></a></li>	
@@ -35,7 +35,7 @@
 					<h5>Room Space: 100 sq. meters</h5>
 					<h5>Capacity: 2 persons</h5></center>
 					<a href="hrs_rooms.php" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="rooms" src="images/3.jpg" style="max-height:312px; alt="ROOM" >
-					<a href="hrs_reserv.php" data-rel=""  data-position-to="" data-transition="" type="button" data-theme="b">Reserve</a>
+					<a href="try2.php" data-rel="dialog"  data-position-to="window" data-transition="fade" type="button" data-theme="b">Reserve</a>	
 					</div>
 					
 			<li><a href="#rm102" data-rel="popup"  data-position-to="window" data-transition="fade"><img class="rooms" src="images/4.jpg" alt="ROOM" height="100px" width="100px"><h2>Room 102</h2><p>Php 1,500.00</p></a></li>
@@ -45,7 +45,7 @@
 					<h5>Room Space: 100 sq. meters</h5>
 					<h5>Capacity: 2 persons</h5></center>
 					<a href="hrs_rooms.php" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="rooms" src="images/4.jpg" style="max-height:512px; alt="ROOM" >
-					<a href="hrs_reserv.php" data-rel=""  data-position-to="" data-transition="" type="button" data-theme="b">Reserve</a>
+					<a href="try3.php" data-rel="dialog"  data-position-to="window" data-transition="fade" type="button" data-theme="b">Reserve</a>	
 					</div>
 					
 			<li><a href="#rm103" data-rel="popup"  data-position-to="window" data-transition="fade"><img class="rooms" src="images/6.jpg" alt="ROOM" height="100px" width="100px"><h2>Room 103</h2><p>Php 2,000.00</p></a></li>
@@ -54,7 +54,7 @@
 					<center><h5>Room Space: 100 sq. meters</h5>
 					<h5>Capacity: 2 persons</h5></center>
 					<a href="hrs_rooms.php" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="rooms" src="images/6.jpg" style="max-height:512px; alt="ROOM" >
-					<a href="hrs_reserv.php" data-rel=""  data-position-to="" data-transition="" type="button" data-theme="b">Reserve</a>
+					<a href="try4.php" data-rel="dialog"  data-position-to="window" data-transition="fade" type="button" data-theme="b">Reserve</a>	
 					</div>
         </ul>
 		</div>

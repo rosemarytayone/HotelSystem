@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +31,7 @@
 						<font color="white">Room Number: </font>
 						<br><br>
                         </label>
-                        <input name="roomnumber" id="roomnumber" placeholder="" value="" type="text" />
+                        <input name="roomnumber" id="roomnumber" placeholder="" value="100" type="text" readOnly="true"/>
                     </fieldset>
                 </div>
                 <ul data-role="listview" data-divider-theme="a" data-inset="true">
