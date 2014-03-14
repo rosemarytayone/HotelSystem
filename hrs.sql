@@ -34,13 +34,13 @@ CREATE TABLE `customers` (
   `time` varchar(15) NOT NULL,
   `days` int(15) NOT NULL,
   `guests` int(15) NOT NULL,
-  `reservationcode` varchar(6) NOT NULL,
+  `reservationcode` varchar(25) NOT NULL,
   `roomnumber` varchar(15) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `date` (`date`),
   UNIQUE KEY `time` (`time`),
   UNIQUE KEY `reservationcode` (`reservationcode`)
-) ENGINE=MyISAM AUTO_INCREMENT=81 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=85 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -49,6 +49,7 @@ CREATE TABLE `customers` (
 
 LOCK TABLES `customers` WRITE;
 /*!40000 ALTER TABLE `customers` DISABLE KEYS */;
+INSERT INTO `customers` VALUES (82,'sazie','ello','leotero','iligan city','09179339927','saziemucai@gmail.com','2014-04-16','09:30',3,9,'I7WzZb','102'),(81,'ifee','magpantay','padayhag','cdo','09122741700','ifeempadayhag@gmail.com','2014-03-20','13:00',2,1,'gNN1JD','100'),(83,'jane','acera','abanid','pagadian','09085348949','janefaith.abanid@gmail.co','2014-06-10','17:00',5,3,'e8ZazW38','103'),(84,'rosemary','general','tayone','naawan','09057345839','senpai.mizuki@gmail.com','2014-07-27','09:00',5,9,'OFfJn','101');
 /*!40000 ALTER TABLE `customers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -88,4 +89,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-03-13 23:07:14
+-- Dump completed on 2014-03-14  9:54:56
