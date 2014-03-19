@@ -58,8 +58,8 @@ mysql_select_db("hrs", $con);
 			echo "<br>";
 			echo "</br>Code:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;" . $row['reservationcode'];
 			echo "<br><br>Name: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;" . $row['firstname']; 
-			echo "&nbsp&nbsp&nbsp;" . $row['middlename']; 
-			echo "&nbsp&nbsp&nbsp;" . $row['lastname'];
+			echo "&nbsp&nbsp&nbsp;" . $row['lastname']; 
+			echo "&nbsp&nbsp&nbsp;" . $row['middlename'];
 			echo "</br></br>Address:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;" . $row['address'];
 			echo "</br></br>Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;" . $row['email'];
 			echo "</br></br>Date:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;" . $row['date'];
@@ -71,6 +71,11 @@ mysql_select_db("hrs", $con);
 		}
 			echo "</font></table></p>"; 
 		}
+	}
+	else if(empty($b) or empty($a)){
+		echo "<center>";
+		echo("Please input a reservation code.");
+		echo "</center>";
 	}
 	else {
 		header("checkstat.php");
