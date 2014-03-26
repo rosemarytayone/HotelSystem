@@ -11,7 +11,7 @@
 	
 	<div data-role="page" class="type-home" style="background-image: url('images/2.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
    <div data-role="header" data-theme="a">	
-	<h1>HRS</h1>
+	<h1>Hotel Reservation</h1>
 		<a href="index.php" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-delete">Home</a> 
 	</div>
             <div data-role="content">
@@ -27,7 +27,7 @@
                            <font color="white">Reservation Code: </font>
 						   <br><br>
                         </label>
-                        <input name="search" id="search" placeholder="Please input your valid reservation code.(Example: naGntY)" value="" type="text" class="required" />
+                        <input name="search" id="search" placeholder="Example: gu86kFG" value="" type="text" class="required" />
                     </fieldset>
                 </div>	
 			<div>
@@ -38,7 +38,7 @@
 		<div data-role="content">
 
 <div data-role="footer"  data-position="fixed" data-theme="a" class="footer-docs"> 
-				<h4>&copy; 2012-2013 Mobile Hotel Reservation</h4>
+				<h4>&copy; 2013-2014 HRS Mobile</h4>
 				</div><!-- /footer --></div><!-- /footer -->
 </body>
 </html>

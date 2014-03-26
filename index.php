@@ -10,7 +10,7 @@
 
 <div data-role="page" class="type-home" style="background-image: url('images/2.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 <div data-role="header" data-theme="a">
-		<h1>HRS</h1>
+		<h1>Hotel Reservation</h1>
 </div>
 
 <div data-role="content">	
@@ -31,16 +31,11 @@
                             Check my reservation status.
                         </a>
                     </li>
-					<li data-theme="c">
-                        <a href="summary.php" data-transition="flow">
-                            Booking Schedule
-                        </a>
-                    </li>
                 </ul
 
 </div>
 <div data-role="footer"  data-position="fixed" data-theme="a" class="footer-docs"> 
-	<h4>&copy; 2012-2013 Mobile Hotel Reservation</h4>
+	<h4>&copy; 2013-2014 HRS Mobile</h4>
 </div><!-- /footer -->
 
 </body>

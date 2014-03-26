@@ -12,7 +12,7 @@
 		<div data-role="page" class="type-home" style="background-image: url('images/2.jpg'); background-attachment: no-fixed; background-repeat: repeat; background-size: 100% 100%;">
 		
 		<div data-role="header" data-theme="a" data-position="inline">
-		<h1>HRS</h1>
+		<h1>Hotel Reservation</h1>
 		<a href="index.php" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-delete">Home</a> 
 		</div>
 			
@@ -60,7 +60,7 @@
 		</div>
 			
 			<div data-role="footer" data-position="fixed">
-			<h4>&copy; Hotel Reservation System</h4></div>
+			<h4>&copy; 2013-2014 HRS Mobile</h4></div>
            
         
     </body>

@@ -43,7 +43,45 @@
 					
 						<tbody>
 						</center>
+							<?php
+								include("config.php");
 							
+								$customers = mysql_query("SELECT * FROM customers") ?>
+					
+							<?php
+			  
+								$db2 = mysql_query("SELECT id FROM customers");
+							
+									if (isset($_GET['id'])) {
+										$id = $_GET['id'];
+								
+									$db2 = "DELETE FROM customers WHERE id = '$id'";
+									
+										if (@mysql_query($db2)) {
+		
+										} else {
+		
+									}
+								}
+		
+								$db = mysql_query("SELECT * FROM customers ORDER BY id ASC");
+									while($row = mysql_fetch_array($customers)){ 
+					
+										echo '<tr>';
+											echo '<td><center>'.$row['date'].'</center></td>';
+											echo '<td><center>'.$row['time'].'</center></td>';
+											echo '<td><center>'.$row['roomnumber'].'</center></td>';
+											echo '<td><center>'.$row['days'].'</center></td>';
+											echo '<td><center>'.$row['guests'].'</center></td>';
+											echo '<td><center>'.$row['firstname'].'</center></td>'; echo '<td><center>'.$row['lastname'].'</center></td>'; echo '<td><center>'.$row['middlename'].'</center></td>';
+											echo '<td><center>'.$row['address'].'</center></td>';
+											echo '<td><center>'.$row['contactnumber'].'</center></td>';
+											echo '<td><center>'.$row['email'].'</center></td>';
+											echo '<td><center>'.$row['reservationcode'].'</center></td>';
+										echo '</tr> ';
+							
+								}
+							?>
 						</tbody>
 					</table>
 					</div>

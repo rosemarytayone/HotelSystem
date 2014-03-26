@@ -11,8 +11,8 @@
 
 <div data-role="page" class="type-home" style="background-image: url('images/2.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 	<div data-role="header" data-theme="a" data-position="inline">
-		<a href="hrs_reserv1.php" data-icon="arrow-l">Back</a>
-		<h1>HRS</h1>
+		<a href="hrs_rooms.php" data-icon="arrow-l">Back</a>
+		<h1>Hotel Reservation</h1>
 		<a href="index.php" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-delete">Home</a> 
 	</div>
 	<br><br>
@@ -29,7 +29,7 @@
 			</div>
 		</div>
 		<div data-role="footer" data-position="fixed">
-		<h4>&copy; Hotel Reservation System</h4></div>
+		<h4>&copy; 2013-2014 HRS Mobile</h4></div>
 </div
 
 

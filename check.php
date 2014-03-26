@@ -11,7 +11,7 @@
 	
 	<div data-role="page" class="type-home" style="background-image: url('images/2.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
     <div data-role="header" data-theme="a">	
-	<h1>HRS</h1>
+	<h1>Hotel Reservation</h1>
 		<a href="index.php" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-delete">Home</a> 
 	</div>
 	<br><br>
@@ -28,7 +28,7 @@
                            <font color="white">Reservation Code: </font>
 						   <br><br>
                         </label>
-                        <input name="search" id="search" placeholder="Please input your valid reservation code.(Example: naGntY)" value="" type="text" data-theme="c"/>
+                        <input name="search" id="search" placeholder="Example: gu86kFG" value="" type="text" data-theme="c"/>
                     </fieldset>
                 </div>	
 	<?php
@@ -40,7 +40,7 @@
 mysql_select_db("hrs", $con);
 	
 	$a = $_GET['search'];
-	$b = $_POST['search'];
+	//$b = $_POST['search'];
 	$qry = ("SELECT * from customers where reservationcode like '$a%'");
 	$result = mysql_query($qry);
 	$num_rows = mysql_num_rows($result);
@@ -58,10 +58,10 @@ mysql_select_db("hrs", $con);
 			echo "<br>";
 			echo "</br>Code:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;" . $row['reservationcode'];
 			echo "<br><br>Name: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;" . $row['firstname']; 
-			echo "&nbsp&nbsp&nbsp;" . $row['lastname']; 
-			echo "&nbsp&nbsp&nbsp;" . $row['middlename'];
+			echo "&nbsp&nbsp&nbsp;" . $row['middlename']; 
+			echo "&nbsp&nbsp&nbsp;" . $row['lastname'];
 			echo "</br></br>Address:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;" . $row['address'];
-			echo "</br></br>Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;" . $row['email'];
+			echo "</br></br>Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;" . $row['email'];
 			echo "</br></br>Date:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;" . $row['date'];
 			echo "</br></br>Time:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;" . $row['time'];
 			echo "</br></br>Days:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;" . $row['days'];
@@ -88,7 +88,7 @@ mysql_select_db("hrs", $con);
 	</div>	
 	</div>
 <div data-role="footer"  data-position="fixed" data-theme="a" class="footer-docs"> 
-				<h4>&copy; 2012-2013 Mobile Hotel Reservation</h4>
+				<h4>&copy; 2013-2014 HRS Mobile</h4>
 				</div><!-- /footer --></div><!-- /footer -->
 </body>
 </html>
