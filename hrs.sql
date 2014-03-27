@@ -24,23 +24,23 @@ DROP TABLE IF EXISTS `customers`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `customers` (
   `id` int(15) NOT NULL AUTO_INCREMENT,
-  `firstname` varchar(25) NOT NULL,
-  `middlename` varchar(25) NOT NULL,
-  `lastname` varchar(25) NOT NULL,
-  `address` varchar(30) NOT NULL,
+  `firstname` varchar(50) NOT NULL,
+  `middlename` varchar(50) NOT NULL,
+  `lastname` varchar(50) NOT NULL,
+  `address` varchar(50) NOT NULL,
   `contactnumber` varchar(25) NOT NULL,
-  `email` varchar(25) NOT NULL,
-  `date` varchar(15) NOT NULL,
-  `time` varchar(15) NOT NULL,
-  `days` int(15) NOT NULL,
-  `guests` int(15) NOT NULL,
-  `reservationcode` varchar(25) NOT NULL,
-  `roomnumber` varchar(15) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `date` date NOT NULL,
+  `time` time NOT NULL,
+  `days` int(25) NOT NULL,
+  `guests` int(25) NOT NULL,
+  `reservationcode` varchar(50) NOT NULL,
+  `roomnumber` varchar(25) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `date` (`date`),
   UNIQUE KEY `time` (`time`),
   UNIQUE KEY `reservationcode` (`reservationcode`)
-) ENGINE=MyISAM AUTO_INCREMENT=85 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=158 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -49,7 +49,7 @@ CREATE TABLE `customers` (
 
 LOCK TABLES `customers` WRITE;
 /*!40000 ALTER TABLE `customers` DISABLE KEYS */;
-INSERT INTO `customers` VALUES (82,'sazie','ello','leotero','iligan city','09179339927','saziemucai@gmail.com','2014-04-16','09:30',3,9,'I7WzZb','102'),(81,'ifee','magpantay','padayhag','cdo','09122741700','ifeempadayhag@gmail.com','2014-03-20','13:00',2,1,'gNN1JD','100'),(83,'jane','acera','abanid','pagadian','09085348949','janefaith.abanid@gmail.co','2014-06-10','17:00',5,3,'e8ZazW38','103'),(84,'rosemary','general','tayone','naawan','09057345839','senpai.mizuki@gmail.com','2014-07-27','09:00',5,9,'OFfJn','101');
+INSERT INTO `customers` VALUES (156,'jim','padilla','general','naawan mis. or.','09085781949','renmark.tayone@gmail.com','2014-04-30','06:30:00',3,2,'ypNuY7s','rm100'),(155,'jane faitn','branzuela','abanid','iligan city','09179339927','janefaith.abanid@gmai.com','2014-04-11','16:00:00',1,4,'BQ5q26H','rm102'),(154,'rose mary','serino','tayone','manticao, mis. or.','09122741700','senpai.mizuki@gmail.com','2014-03-26','07:00:00',1,2,'aWDkvHa','rm101'),(157,'ifee','magpantay','padayhag','cagayan de oro city','09368343252','ifeempadayhag@gmail.com','2014-03-31','20:35:00',4,2,'g00YzYn','rm103');
 /*!40000 ALTER TABLE `customers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,4 +89,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-03-14  9:54:56
+-- Dump completed on 2014-03-27  0:40:07
