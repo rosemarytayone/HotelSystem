@@ -11,15 +11,14 @@
 
 <div data-role="page" class="type-home" style="background-image: url('images/2.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 	<div data-role="header" data-theme="a" data-position="inline">
-		<a href="hrs_rooms.php" data-icon="arrow-l">Back</a>
 		<h1>Hotel Reservation</h1>
 		<a href="index.php" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-delete">Home</a> 
-	</div>
+		</div>
 	<br><br>
-	<div data-role="content" data-theme="a">	
+	<div data-role="content" data-theme="b">	
 		
             	<div data-role="content">
-                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                <ul data-role="listview" data-divider-theme="a" data-inset="true">
                     <li data-role="list-divider" role="heading">
                         Confirm Transaction
                     </li>

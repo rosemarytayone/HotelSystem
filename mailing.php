@@ -33,7 +33,7 @@ table.db-table td	{ padding:5px; border-left:0px solid #ccc; border-top:0px soli
 * @version $Id$
 */
 
-require '../class.phpmailer.php';
+require 'class.phpmailer.php';
 
 try {
 	$mail = new PHPMailer(true); //New instance, with exceptions enabled
@@ -73,11 +73,11 @@ try {
 
 	// prepare email body text 
 $body .= "<b>";
-$body .= "-----------------------------------------------"; 
+$body .= "------------------------------------------------------------------------"; 
 $body .= "<br>";
 $body .= "Thank you! Below is your reservation details."; 
 $body .= "<br>";
-$body .= "-----------------------------------------------"; 
+$body .= "------------------------------------------------------------------------"; 
 $body .= "</b>";
 $body .= "<br>"; 
 $body .= "<br>";
@@ -126,11 +126,11 @@ $body .= $roomnumber;
 $body .= "<br>";
 $body .= "<br>";
 $body .= "<b>";
-$body .= "-----------------------------------------------"; 
+$body .= "------------------------------------------------------------------------"; 
 $body .= "<br>";
 $body .= "&copy; 2013-2014 HRS Mobile"; 
 $body .= "<br>";
-$body .= "-----------------------------------------------"; 
+$body .= "------------------------------------------------------------------------"; 
 $body .= "</b>";
 	
 	$to = $email;

@@ -11,23 +11,24 @@
 	
 	<div data-role="page" class="type-home" style="background-image: url('images/2.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
     <div data-role="header" data-theme="a">
-	<h1>HRS</h1>
+	<h1>Hotel Reservation</h1>
 		<a href="index.php" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-delete">Home</a> 
 	</div>
 	<br><br>
-<div data-role="content" data-theme="a">
- <ul data-role="listview" data-theme="b" data-inset="true">
+<div data-role="content" data-theme="b">
+ <ul data-role="listview" data-divider-theme="a" data-inset="true">
     <li data-role="list-divider" role="heading">
         <font size=""> LIST OF ALL RESERVATION </font>
     </li>
+	
     </ul>
 	<center>
 <div id="table">				
-					<table cellpadding="17" cellspacing="0" border="0" class="display" id="example">
+					<table cellpadding="10" cellspacing="0" border="0" class="display" id="example">
 						<thead>
-							<tr bgcolor="red">
-								<th rowspan="2">Date</th>
-								<th rowspan="2">Time</th>
+							<tr bgcolor="skyblue">
+								<th rowspan="2">Date (Y-M-D)</th>
+								<th rowspan="2">Time (24hrs)</th>
 								<th rowspan="2">Room</th>
 								<th rowspan="2">Days</th>
 								<th rowspan="2">Guests</th>
@@ -67,18 +68,18 @@
 								$db = mysql_query("SELECT * FROM customers ORDER BY id ASC");
 									while($row = mysql_fetch_array($customers)){ 
 					
-										echo '<tr>';
+										echo '<tr><b>';
 											echo '<td><center>'.$row['date'].'</center></td>';
 											echo '<td><center>'.$row['time'].'</center></td>';
 											echo '<td><center>'.$row['roomnumber'].'</center></td>';
 											echo '<td><center>'.$row['days'].'</center></td>';
 											echo '<td><center>'.$row['guests'].'</center></td>';
-											echo '<td><center>'.$row['firstname'].'</center></td>'; echo '<td><center>'.$row['lastname'].'</center></td>'; echo '<td><center>'.$row['middlename'].'</center></td>';
+											echo '<td><center>'.$row['firstname'].'</center></td>'; echo '<td><center>'.$row['middlename'].'</center></td>'; echo '<td><center>'.$row['lastname'].'</center></td>';
 											echo '<td><center>'.$row['address'].'</center></td>';
 											echo '<td><center>'.$row['contactnumber'].'</center></td>';
 											echo '<td><center>'.$row['email'].'</center></td>';
 											echo '<td><center>'.$row['reservationcode'].'</center></td>';
-										echo '</tr> ';
+										echo '</tr></b>';
 							
 								}
 							?>
@@ -88,7 +89,7 @@
 		</div>
 
 <div data-role="footer"  data-position="fixed" data-theme="a" class="footer-docs"> 
-				<h4>&copy; 2012-2013 Mobile Hotel Reservation</h4>
+				<h4>&copy; 2013-2014 HRS Mobile</h4>
 				</div><!-- /footer --></div><!-- /footer -->
 </body>
 </html>

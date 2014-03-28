@@ -5,21 +5,15 @@
 <link href="jquery.mobile.min.css" rel="stylesheet" type="text/css"/>
 <script src="jquery.min.js"></script>
 <script src="jquery.mobile.min.js"></script>
-<style>
-table.db-table 		{ border-right:0px solid #ccc; border-bottom:0px solid #ccc; }
-table.db-table th	{ background:#eee; padding:5px; border-left:0px solid #ccc; border-top:0px solid #ccc; }
-table.db-table td	{ padding:5px; border-left:0px solid #ccc; border-top:0px solid #ccc; }
-</style>
 </head>
 
 <body>	
 
 <div data-role="page" class="type-home" style="background-image: url('images/2.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 	<div data-role="header" data-theme="a" data-position="inline">
-		<a href="hrs_reserv1.php" data-icon="arrow-l">Back</a>
 		<h1>Hotel Reservation</h1>
 		<a href="index.php" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-delete">Home</a> 
-	</div>
+		</div>
 	<br><br>
 	<div data-role="content" data-theme="a">	
 		

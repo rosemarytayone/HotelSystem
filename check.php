@@ -15,19 +15,17 @@
 		<a href="index.php" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-delete">Home</a> 
 	</div>
 	<br><br>
-            <div data-role="content" data-theme="a">
-			  <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <div data-role="content" data-theme="b">
+			  <ul data-role="listview" data-divider-theme="a" data-inset="true">
                     <li data-role="list-divider" role="heading">
-                        Check your reservation status!
+                        Your reservation details!
                     </li>
                 </ul>
 				<form action="check.php" method="GET">
                 <div data-role="fieldcontain">
-                    <fieldset data-role="controlgroup">
-                        <label for="search">
-                           <font color="white">Reservation Code: </font>
-						   <br><br>
-                        </label>
+                    
+                           <font color="black">Reservation Code: </font>
+						  
                         <input name="search" id="search" placeholder="Example: gu86kFG" value="" type="text" data-theme="c"/>
                     </fieldset>
                 </div>	
@@ -47,7 +45,7 @@ mysql_select_db("hrs", $con);
 	
 	if($a != ""){
 		if($num_rows==0){
-			echo "<p align='center'></br>No Results found</p>";
+			echo "<p align='center'><b>No Results found</b></p>";
 		}
 		else{
 			echo "<p align='center'></br><table border='1'>";
@@ -82,7 +80,7 @@ mysql_select_db("hrs", $con);
 	}
 		mysql_close($con);
 ?>
-<input name="submit" type="submit" value="Check" data-theme="b" />
+<input name="submit" type="submit" value="OK" data-theme="b" />
 		</form>
 		<div>
 	</div>	

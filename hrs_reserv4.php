@@ -44,7 +44,7 @@
                 </ul>
 				<div class = "actions">
 				<form name="myform" action="r1.php" onsubmit="return validateForm()" method="post">
-                <input name="roomnumber" id="roomnumber" placeholder="Room Number" value="rm102" type="text" readOnly="true"/>
+                <input name="roomnumber" id="roomnumber" placeholder="Room Number" value="rm103" type="text" readOnly="true"/>
 						
                 <ul data-role="listview" data-divider-theme="a" data-inset="true">
                     <li data-role="list-divider" role="heading">

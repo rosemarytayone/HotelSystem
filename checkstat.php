@@ -17,21 +17,20 @@
             <div data-role="content">
                 <ul data-role="listview" data-divider-theme="a" data-inset="true">
                     <li data-role="list-divider" role="heading">
-                        Check your reservation status!
+                        Your reservation details!
                     </li>
                 </ul>
 				<form action="check.php" method="GET">
                 <div data-role="fieldcontain">
-                    <fieldset data-role="controlgroup">
-                        <label for="search">
+                    
+                        
                            <font color="white">Reservation Code: </font>
-						   <br><br>
-                        </label>
+						
                         <input name="search" id="search" placeholder="Example: gu86kFG" value="" type="text" class="required" />
-                    </fieldset>
+                  
                 </div>	
 			<div>
-			<input name="submit" type="submit" value="Check" data-theme="b" />
+			<input name="submit" type="submit" value="OK" data-theme="b" />
 		</form>
 		</div>
 		</div>

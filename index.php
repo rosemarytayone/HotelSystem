@@ -28,7 +28,12 @@
                     
                     <li data-theme="c">
                         <a href="checkstat.php" data-transition="flow">
-                            Check my reservation status.
+                            Reservation Details
+                        </a>
+                    </li>
+					<li data-theme="c">
+                        <a href="summary.php" data-transition="flow">
+                            Booking Schedule
                         </a>
                     </li>
                 </ul
